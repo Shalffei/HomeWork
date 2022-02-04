@@ -8,7 +8,7 @@ using Tank_Factory.Tank_Details;
 
 namespace Tank_Factory.Service
 {
-    public class CreatTank
+    public class CreatTankService
     {
         public Tank GetTank(string type, Chassis chassis, Engine engine, Frame frame, Tower tower, Weapon weapon, Factory factory)
         {
@@ -27,11 +27,7 @@ namespace Tank_Factory.Service
             else if (tank.Tower == Tower.MiddleTower && tank.Engine == Engine.ForHundredHP && tank.Weapon == Weapon.MiddleWeapon && tank.Chassis == Chassis.FortyTone && tank.Frame == Frame.Middle)
                 Console.WriteLine($"You are creating Middle Tank{type}. Your tank has been added to the collection in your Factory");
             else
-                {
                 Console.WriteLine("Error, parts not applicable to this chassis or Tower, Engine, Frame, Weapon");
-                // Hallo;
-                } 
-            
             return tank;
 
         }

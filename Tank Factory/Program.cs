@@ -2,7 +2,7 @@
 using Tank_Factory.Models;
 using Tank_Factory.Tank_Details;
 
-CreatTank creatTank = new CreatTank();
+CreatTankService creatTank = new CreatTankService();
 Factory factory = new Factory();
 var myModel = creatTank.GetTank("Middle T-34", Chassis.FortyTone, Engine.SixHundredHP, Frame.Middle, Tower.MiddleTower, Weapon.MiddleWeapon, factory);
 myModel = creatTank.GetTank("Middle T-34", Chassis.FortyTone, Engine.ForHundredHP, Frame.Middle, Tower.MiddleTower, Weapon.MiddleWeapon, factory);
