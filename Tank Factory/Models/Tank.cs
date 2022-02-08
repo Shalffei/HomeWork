@@ -16,5 +16,8 @@ namespace Tank_Factory.Models
         public Frame Frame { get; set; }
         public Tower Tower { get; set; }
         public Weapon Weapon { get; set; }
+        public Color Color { get; set; }
+
+        public DateTime DateOfChange;
     }
 }
